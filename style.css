@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+}
+body {
+  position: relative;
+  background-color: #141414;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.center {
+  background-color: #1f1f1f;
+  outline: solid 0.1px rgba(255, 255, 255, 0.436);
+  /* width: 700px; */
+  padding: 3rem 5rem;
+  border-radius: 6px;
+  box-shadow: #ffffff56 1px 1px 15px;
+}
+.profileContent {
+  display: flex;
+  flex-direction: column;
+}
+.profileContent img {
+  align-self: center;
+  align-self: center;
+  margin: 1.3rem;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  padding: 0.2rem;
+  box-shadow: rgb(105, 105, 105) 1px 1px 20px;
+}
+.profileContent h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 0.2rem;
+}
+.profileContent > p:nth-of-type(1) {
+  color: lightgreen;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.profileContent > p:last-child {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.loginPlatfroms > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 2rem;
+}
+.loginPlatfroms > ul > li {
+  list-style: none;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 1px #141414;
+  width: 240px;
+  padding: 0.6rem;
+  border-radius: 7px;
+  background-color: #333333;
+  cursor: pointer;
+  user-select: none;
+}
+.loginPlatfroms > ul > li:hover {
+  outline: solid 1px #fff;
+}
+/* #Lg {
+  color: white;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: absolute;
+} */
+@media screen and (min-width: 768px) {
+  .center {
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+    padding: 4rem 5rem;
+  }
+
+  .loginPlatfroms > ul > li {
+    padding: 0.8rem;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  #Lg {
+    position: relative;
+    font-size: 18px;
+    top: 50px;
+  }
+} */
